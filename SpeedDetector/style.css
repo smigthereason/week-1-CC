@@ -158,7 +158,22 @@ body {
     font-weight: 600;
     background-color: #9fb6b8;
 }
-#Ok{
-    color: green;
-    text-shadow: 0 0 2px #00ff00, 0 0 1px #00ff00, 0 0 2px #00ff00;
+#result{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 20px;
+    font-size: x-large;
+    color: rgb(207, 225, 245);
+    text-shadow: 0 0 2px #03eaf1, 0 0 1px #60f8be, 0 0 2px #34aee7;
+    animation: fadeInOut 3s ease-in-out infinite alternate;
+}
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    
 }
