@@ -8,7 +8,7 @@
 body {
     font-family: "Poppins", sans-serif;
     height: 100px;
-    color: #f5f2f8;
+    
 
 }.background-clip{ 
     position: absolute;
@@ -24,22 +24,52 @@ body {
     }
     
 }
-.container {
+.navbaritems {
     display: flex;
     justify-content: space-around; 
     align-items: center;
     flex-wrap: wrap; 
+    text-decoration: none ;
 }
 
+@keyframes dropDownAnimation {
+    0% {
+        transform: translateY(-100px); /* Start position above the center */
+        opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+        transform: translateY(200px); /* Stop at the center */
+        opacity: 1; /* Full opacity */
+    }
+}
 
-.container > div {
+.navbaritems > div {
     flex: 1; 
     max-width: 300px;
     margin: 10px; 
     padding: 20px; 
     text-align: center; 
     position: relative;
-    top: 200px;
+    top:0;
     border: 0;
+    font-size: x-large;
     font-weight: 800;
+    animation: dropDownAnimation 2s ease forwards;
+    transition: top 0.1s ease;
+    
 }
+.navbaritems > div:hover {
+    top: 10px;
+}
+
+
+.navbaritems a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+
+.navbaritems a:hover {
+    color: #252663;
+}
+
