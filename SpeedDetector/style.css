@@ -36,9 +36,11 @@ body {
     left: 50%;
     transform: translate(-50%, 50%);
     background: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.08)); 
-    background-color: #223140;
+    background-color: #94abc2;
     border-radius: 24px;
     text-align: center;
+    background: transparent;
+    backdrop-filter: blur(20px);
 }
 .loader-widget {
     width: 360px;
@@ -59,7 +61,7 @@ body {
     top: 40px;
     left: 65px;
     border-radius: 50%;
-    background: conic-gradient(rgba(1, 182, 190, 0.65) 0%, rgba(1, 182, 190, 0) 100%);
+    background: conic-gradient(rgba(202, 230, 231, 0.65) 0%, rgba(1, 182, 190, 0) 100%);
     animation: radarRotate 2s linear;
 }
 @keyframes radarRotate {
@@ -81,7 +83,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
-    bottom: 200px;
+    top: 30px;
     left: 5px;
 }
 .loader-content button{
@@ -93,7 +95,7 @@ body {
     font-weight: bold;
     line-height: 1.5;
     border-radius: 50%;
-    background-color: #223140;
+    background-color: #15314d;
     color: #eaeaea;
     border: 0;
     box-shadow: 0 0 12px #81ecec;
@@ -109,6 +111,9 @@ body {
     border-radius: 50%;
     animation: btnRing 2s linear;
 }
+.loader-content button:hover {
+    background-color: #1f3c4e;
+}
 
 @keyframes btnRing {
     60%, 100% {
@@ -119,4 +124,15 @@ body {
         opacity: 0;
     }
     
+}
+.loader-content button:after {
+    content: '';
+    position: absolute;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, #25476e, #c7ecee);
+    z-index: -1;
+    border-radius: 50%;
 }
