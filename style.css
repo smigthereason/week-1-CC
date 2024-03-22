@@ -8,13 +8,14 @@
 body {
     font-family: "Poppins", sans-serif;
     height: 100px;
-    color: #eaeaea;
+    color: #633c7e;
 
 }.background-clip{ 
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
+    filter: grayscale(20%);
 }
 @media (min-aspect-ratio:16/9){
     .background-clip{
@@ -35,7 +36,10 @@ body {
     flex: 1; 
     max-width: 300px;
     margin: 10px; 
-    padding: 20px;
-    border: 1px solid #ccc; 
+    padding: 20px; 
     text-align: center; 
+    position: relative;
+    top: 200px;
+    border: 0;
+    font-weight: 800;
 }
