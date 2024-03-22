@@ -9,9 +9,9 @@
 
 Write a program that prompts the user to input student marks.//This is created using JS
 
-The input should be between 0 and 100. Then output the correct grade://This is created using HTML
+The input should be between 0 and 100. Then out-put the correct grade://This is created using HTML
 
-A > 79, B > 60 to 79, C > 59 to 49, D > 40 to 49, E > less than 40.//Using JS,one can apply the if-else conditional statement and apply DOM to bring the feedback on the browser for the client.
+A > 79, B > 60 to 79, C > 59 to 49, D > 40 to 49, E > less than 40.//Using JS, one can apply the if-else conditional statement and apply DOM to bring the feedback on the browser for the client.
 
 ### Challenge 2: Speed Detector(Toy Problem)
 
