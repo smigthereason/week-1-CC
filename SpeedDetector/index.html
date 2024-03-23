@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Creates a background video -->
     <video autoplay loop muted plays-inline class="background-clip">
         <source src="assets/4k_Form.mp4" type="video/mp4">
     </video>
+    <!-- Creates a div encasing all parameters. -->
+
     <div class="container">
         <div class="loader-widget">
             <h1>CHECK YOUR SPEED</h1>
@@ -27,6 +30,7 @@
                 <button onclick="checkSpeed()">CHECK</button>
             </div>
         </div>
+        <!-- Creates a div that prints out results. -->
         <div id="result">
             <h1></h1>
         </div>

@@ -11,6 +11,7 @@ body {
     color: #eaeaea;
 
 }
+/* Adjust Video Background Clip */
 .background-clip{ 
     position: absolute;
     right: 0;
@@ -24,9 +25,10 @@ body {
     }
     
 }
-
+/* Assigns hide property to button and input */
 *.hide { display: none !important;}
 
+/* Styling for Container which houses the elements */
 .container {
     position: relative;
     display: flex;
@@ -52,7 +54,7 @@ body {
     color: whitesmoke;
     text-shadow: 0 0 8px #81ecec;
 }
-
+/* Styling for rotating loader */
 .loader {
     display: flex;
     height: 240px;
@@ -64,9 +66,13 @@ body {
     background: conic-gradient(rgba(202, 230, 231, 0.65) 0%, rgba(1, 182, 190, 0) 100%);
     animation: radarRotate 2s linear;
 }
+
+/* animates .loader */
+
 @keyframes radarRotate {
     100% {transform: rotate(-360deg);}    
 }
+
 .loader:before{
     content: '';
     position: absolute;
@@ -86,6 +92,9 @@ body {
     top: 30px;
     left: 5px;
 }
+
+/* button styling */
+
 .loader-content button{
     position: relative;
     cursor: pointer;
@@ -114,6 +123,7 @@ body {
 .loader-content button:hover {
     background-color: #1f3c4e;
 }
+/* button keyring animation */
 
 @keyframes btnRing {
     60%, 100% {
@@ -158,6 +168,7 @@ body {
     font-weight: 600;
     background-color: #9fb6b8;
 }
+/* Styling for result printout */
 #result{
     position: absolute;
     display: flex;
@@ -168,6 +179,8 @@ body {
     text-shadow: 0 0 2px #03eaf1, 0 0 1px #60f8be, 0 0 2px #34aee7;
     animation: fadeInOut 3s ease-in-out infinite alternate;
 }
+
+/* animates results printed out to fade in and out */
 @keyframes fadeInOut {
     0%, 100% {
       opacity: 0;
