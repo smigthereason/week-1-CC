@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-@keyframes fadeInOut {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -24,6 +14,22 @@ body{
 
 
 }
+/* Adjust background to fit screen  */
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: grayscale(20%);
+}
+@media (min-aspect-ratio:16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+/* .container styling */
 section.container{
     display: flex;
     background: transparent;
@@ -34,6 +40,7 @@ section.container{
     border-radius: 20px;
     position: relative;
 }
+/* left-box styling  */
 section.container.left-box{
     position: absolute;
     display: flex;
@@ -67,6 +74,8 @@ section.container.left-box{
     font-weight: 500;
     margin: 20px 0px;
 }
+/* Right-box styling containing inputs */
+
 section.container.Right-box{
     position: absolute;
     display: flex;
@@ -85,6 +94,7 @@ section.container.Right-box{
     gap: 30px;
 
 }
+/* input styling for value placement */
 .entries input{
     margin: 10px 0px;
     width: 300px;
@@ -108,12 +118,13 @@ section.container.Right-box{
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; 
 }
+/* additional styling for button events */
 .entries button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(204, 216, 230, 0.5);
     background-color: #2fcabd;
   }
-  
+  /* Styling for result printout */
 .result{
     position: absolute;
     margin-top: 10px;
@@ -132,6 +143,17 @@ section.container.Right-box{
     letter-spacing: 3px;
     animation: fadeInOut 3s ease-in-out infinite alternate;
 }
+/* animation for result output */
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    
+}
+/* Additional style to highlight difference in Pass and Fail */
 .pass {
     color: green;
     text-shadow: 0 0 2px #00ff00, 0 0 1px #00ff00, 0 0 2px #00ff00;
@@ -140,23 +162,10 @@ section.container.Right-box{
     color: red;
     text-shadow: 0 0 2px #ff0000, 0 0 1px #ff0000, 0 0 2px #ff0000;
 }
+/* Watermark styling */
 #Copyright {
     display: flex;
     place-content: center;
     padding-top: 50px;
     font-weight: 500;
-}
-.background-clip{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    filter: grayscale(20%);
-}
-@media (min-aspect-ratio:16/9){
-    .background-clip{
-        width: 100%;
-        height: auto;
-    }
-    
 }
