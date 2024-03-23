@@ -8,9 +8,9 @@
 body {
     font-family: "Poppins", sans-serif;
     height: 100px;
-    
-
-}.background-clip{ 
+}
+/* Background styling */
+.background-clip{ 
     position: absolute;
     right: 0;
     bottom: 0;
@@ -24,6 +24,8 @@ body {
     }
     
 }
+
+/* navbar styling */
 .navbaritems {
     display: flex;
     justify-content: space-around; 
@@ -31,7 +33,7 @@ body {
     flex-wrap: wrap; 
     text-decoration: none ;
 }
-
+/* navbar animation on startup */
 @keyframes dropDownAnimation {
     0% {
         transform: translateY(-100px); /* Start position above the center */
@@ -42,7 +44,7 @@ body {
         opacity: 1; /* Full opacity */
     }
 }
-
+/* item properties and characteristics */
 .navbaritems > div {
     flex: 1; 
     max-width: 300px;
