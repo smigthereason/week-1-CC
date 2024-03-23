@@ -1,108 +1,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-transform: capitalize;
-    font-family: "Poppins", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    display: grid;
-    place-content: center;
-    padding-top: 100px;
-    color: beige;
-    font-weight: 700;
+body {
+  display: grid;
+  place-content: center;
+  padding-top: 100px;
+  color: beige;
+  font-weight: 700;
 }
 
 /* adjusts background clip  */
-.background-clip{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    -webkit-filter: blur(3px);
+.background-clip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-filter: blur(3px);
 }
 
-@media (min-aspect-ratio:16/9){
-    .background-clip{
-        width: 100%;
-        height: auto;
-    }
-    
+@media (min-aspect-ratio: 16/9) {
+  .background-clip {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Styles div encasing all elements */
-.all{
-    position: relative;
-    bottom: 10px;
-    text-align: center;
-    display: grid;
-    margin: 10px;
-    padding: 20px;
-    animation: dropDownAnimation 2s ease forwards;
-    transition: top 0.1s ease;
+.all {
+  position: relative;
+  bottom: 10px;
+  text-align: center;
+  display: grid;
+  margin: 10px;
+  padding: 20px;
+  animation: dropDownAnimation 2s ease forwards;
+  transition: top 0.1s ease;
 }
 /* Animates dropdown animation on startup */
 @keyframes dropDownAnimation {
-    0% {
-        transform: translateY(10px); /* Start position above the center */
-        opacity: 0; /* Start with opacity 0 */
-    }
-    100% {
-        transform: translateY(0px); /* Stop at the center */
-        opacity: 1; /* Full opacity */
-    }
+  0% {
+    transform: translateY(10px); /* Start position above the center */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  100% {
+    transform: translateY(0px); /* Stop at the center */
+    opacity: 1; /* Full opacity */
+  }
 }
 /* input tag styling */
 label {
-    padding: 10px;
-    font-size: 20px;
+  padding: 10px;
+  font-size: 20px;
 }
 /* input section styling */
-input{
-    margin: 10px 0px;
-    width: 300px;
-    height: 30px;
-    padding: 10px;
-    outline: none;
-    border: 0;
-    border-radius: 30px;
-    font-size: 0.9rem;
+input {
+  margin: 10px 0px;
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  border-radius: 30px;
+  font-size: 0.9rem;
 }
 /* button styling */
-button{
-    color: rgb(196, 58, 143);
-    height: 40px;
-    width: 300px;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: 0;
-    outline: none;
-    font-weight: 900;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; 
+button {
+  color: rgb(196, 58, 143);
+  height: 40px;
+  width: 300px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 0;
+  outline: none;
+  font-weight: 900;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 /* result printout styling */
 .result {
-    position: absolute;
-    top: 320px;
-    height: 10px; 
-    font-weight: 600;
-    padding: 10px;
-    border-radius: 10px 10px 10px 10px;
-    text-align: center;
-    justify-content: center;
-    animation: dropDownAnimation 2s ease forwards;
-    transition: top 0.1s ease;
-    z-index: 1;
-    font-size: medium;
+  position: absolute;
+  top: 320px;
+  height: 10px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  justify-content: center;
+  animation: dropDownAnimation 2s ease forwards;
+  transition: top 0.1s ease;
+  z-index: 1;
+  font-size: medium;
 }
-.result p{
-    position: relative;
-    padding: 5px;
-    text-align: center;
-    justify-content: space-around;
-    font-size: medium;
+.result p {
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  justify-content: space-around;
+  font-size: medium;
 }

@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Creates background with video -->
     <video autoplay loop muted plays-inline class="background-clip">
         <source src="assets/4k_Weather.mp4" type="video/mp4">
     </video>
+    <!-- Create a section housing all components-->
     <section class="container">
+        <!-- Create a div encasing Results -->
         <div class="left-box">
             <h1>.RESULTS.</h1>
             <div class="p-g-t">
@@ -20,6 +23,7 @@
                 
             </div>
         </div>
+        <!-- Create a div encasing data inputs for marks -->
         <div class="Right-box">
             <div class="entries">
                 <input type="number" min="0" max="20" id="ht" placeholder="HTML"/>
@@ -28,6 +32,7 @@
                 <button type="button" onclick="show_result()">show result</button>
             </div>
         </div>
+        <!-- Create a div for housing results -->
         <div class="result">
             <h1></h1>
         </div>
