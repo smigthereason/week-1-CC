@@ -109,7 +109,7 @@ button {
     display: flex;
     place-content: center;
     position: relative;
-    top: 50px;
+    top: 100px;
     padding-top: 50px;
     font-weight: 500;
     font-size: x-small;
