@@ -177,3 +177,11 @@ body {
     }
     
 }
+#Copyright {
+    display: flex;
+    place-content: center;
+    padding-top: 50px;
+    font-weight: 500;
+    position: relative;
+    bottom: 20px;
+}

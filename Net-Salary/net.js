@@ -74,6 +74,7 @@ function calculateAndDisplayNetSalary() {
     const benefits = parseFloat(document.querySelector("#benefits").value);
     const netSalary = calculateNetSalary(basicSalary, benefits);
     
+    const formattedNetSalary = netSalary.toLocaleString({ maximumFractionDigits: 0 });
     const resultDiv = document.querySelector(".result h1");
-    resultDiv.textContent = "Net Salary: " + netSalary.toFixed(2);
+    resultDiv.textContent = "Net Salary: " + formattedNetSalary;
 }
