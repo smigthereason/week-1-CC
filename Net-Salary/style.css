@@ -13,9 +13,8 @@ body{
     padding-top: 100px;
     color: beige;
     font-weight: 700;
-
-
 }
+
 /* adjusts background clip  */
 .background-clip{
     position: absolute;
@@ -24,6 +23,7 @@ body{
     z-index: -1;
     -webkit-filter: blur(3px);
 }
+
 @media (min-aspect-ratio:16/9){
     .background-clip{
         width: 100%;
@@ -31,14 +31,13 @@ body{
     }
     
 }
+
 /* Styles div encasing all elements */
 .all{
     position: relative;
     bottom: 10px;
     text-align: center;
     display: grid;
-    place-content: center;
-    justify-content: flex-end;
     margin: 10px;
     padding: 20px;
     animation: dropDownAnimation 2s ease forwards;
