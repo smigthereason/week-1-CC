@@ -11,16 +11,17 @@ body {
     color: #eaeaea;
 
 }
-.background-clip{ 
+.background-clip{
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
+    filter: grayscale(20%);
 }
 @media (min-aspect-ratio:16/9){
     .background-clip{
-         width:1200px ;
-        height:400px 
+        width: 100%;
+        height: auto;
     }
     
 }
