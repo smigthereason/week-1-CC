@@ -16,6 +16,7 @@ body{
 
 
 }
+/* adjusts background clip  */
 .background-clip{
     position: absolute;
     right: 0;
@@ -30,20 +31,36 @@ body{
     }
     
 }
+/* Styles div encasing all elements */
 .all{
+    position: relative;
+    bottom: 10px;
     text-align: center;
     display: grid;
     place-content: center;
     justify-content: flex-end;
     margin: 10px;
     padding: 20px;
-    
-   
+    animation: dropDownAnimation 2s ease forwards;
+    transition: top 0.1s ease;
 }
+/* Animates dropdown animation on startup */
+@keyframes dropDownAnimation {
+    0% {
+        transform: translateY(10px); /* Start position above the center */
+        opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+        transform: translateY(0px); /* Stop at the center */
+        opacity: 1; /* Full opacity */
+    }
+}
+/* input tag styling */
 label {
     padding: 10px;
     font-size: 20px;
-  }
+}
+/* input section styling */
 input{
     margin: 10px 0px;
     width: 300px;
@@ -54,6 +71,7 @@ input{
     border-radius: 30px;
     font-size: 0.9rem;
 }
+/* button styling */
 button{
     color: rgb(196, 58, 143);
     height: 40px;
@@ -67,10 +85,25 @@ button{
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; 
 }
-.result{
+/* result printout styling */
+.result {
     position: absolute;
-    bottom: 100px;
-    width: 300px;
-    height: 40px;
+    top: 320px;
+    height: 10px; 
+    font-weight: 600;
+    padding: 10px;
     border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    justify-content: center;
+    animation: dropDownAnimation 2s ease forwards;
+    transition: top 0.1s ease;
+    z-index: 1;
+    font-size: medium;
+}
+.result p{
+    position: relative;
+    padding: 5px;
+    text-align: center;
+    justify-content: space-around;
+    font-size: medium;
 }

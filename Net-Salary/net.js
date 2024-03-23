@@ -1,5 +1,8 @@
+// Create a function to calculate PAYEE based on gross salary
 function calculatePayee(grossSalary) {
     let payee = 0;
+
+    // Determines payee based on income brackets
     if (grossSalary <= 24000) {
         payee = 0.1 * grossSalary;
     } else if (grossSalary <= 32333) {
@@ -19,9 +22,11 @@ function calculatePayee(grossSalary) {
     }
     return payee;
 }
-
+//Create a function to calculate NHIF based on basic salary
 function calculateNHIF(basicSalary) {
     let nhif = 0;
+
+    // Determines NHIF contribution based on income brackets
     if (basicSalary <= 5999) {
         nhif = 150;
     } else if (basicSalary <= 7999) {
@@ -53,13 +58,14 @@ function calculateNHIF(basicSalary) {
     } else {
         nhif = 1500;
     }
-    return nhif;
+    return nhif;//returns NHIF amount
 }
 
+// Create a function to calculate NSSF based on basic salary
 function calculateNSSF(basicSalary) {
     return Math.min(0.06 * basicSalary, 6000);
 }
-
+// Create a function to calculate net salary based on basic salary and benefits
 function calculateNetSalary(basicSalary, benefits) {
     const grossSalary = basicSalary + benefits;
     const payee = calculatePayee(grossSalary);
@@ -68,13 +74,20 @@ function calculateNetSalary(basicSalary, benefits) {
     const netSalary = grossSalary - payee - nhif - nssf;
     return netSalary;
 }
-
+// Function to handle calculation and display of net salary
 function calculateAndDisplayNetSalary() {
+
     const basicSalary = parseFloat(document.querySelector("#basic-salary").value);
     const benefits = parseFloat(document.querySelector("#benefits").value);
     const netSalary = calculateNetSalary(basicSalary, benefits);
-    
+    const nhif = calculateNHIF(basicSalary);
+    const nssf = calculateNSSF(basicSalary);
     const formattedNetSalary = netSalary.toLocaleString({ maximumFractionDigits: 0 });
+    
     const resultDiv = document.querySelector(".result h1");
-    resultDiv.textContent = "Net Salary: " + formattedNetSalary;
+    resultDiv.innerHTML = `
+    Net Salary: Ksh ${formattedNetSalary}
+    <p>NHIF Deduction: Ksh ${nhif.toLocaleString({ maximumFractionDigits: 0 })}</p>
+    <p>NSSF Deduction: Ksh ${nssf.toLocaleString({ maximumFractionDigits: 0 })}</p>
+`;
 }
