@@ -35,6 +35,9 @@ https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 
 https://www.aren.co.ke/payroll/taxrates.htm
 
+## Live Link
+https://smigthereason.github.io/week-1-CC/
+
 ## Technologies Used
 - HTML
 - CSS
