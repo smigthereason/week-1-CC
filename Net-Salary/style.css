@@ -96,14 +96,14 @@ button {
   animation: dropDownAnimation 2s ease forwards;
   transition: top 0.1s ease;
   z-index: 1;
-  font-size: medium;
+  font-size: small;
 }
 .result p {
   position: relative;
   padding: 5px;
   text-align: center;
   justify-content: space-around;
-  font-size: medium;
+  font-size: small;
 }
 #Copyright {
     display: flex;
