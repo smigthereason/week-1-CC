@@ -63,7 +63,7 @@ function calculateNHIF(basicSalary) {
 
 // Create a function to calculate NSSF based on basic salary
 function calculateNSSF(basicSalary) {
-    return Math.min(0.06 * basicSalary, 6000);
+    return Math.min(0.07 * basicSalary, 7000);
 }
 // Create a function to calculate net salary based on basic salary and benefits
 function calculateNetSalary(basicSalary, benefits) {
