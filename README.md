@@ -5,6 +5,8 @@
 
 ## Project Description
 
+This project completes a list of tasks that answer the following challenges:
+
 ### Challenge 1: Student Grade Generator(Toy Problem)
 
 Write a program that prompts the user to input student marks.//This is created using JS
