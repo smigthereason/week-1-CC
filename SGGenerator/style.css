@@ -81,7 +81,7 @@ section.container.Right-box{
     display: flex;
     flex-direction: row;
     width: 400px;
-    height: 400px;
+    height: 420px;
     border-radius: 0px 10px 10px 0px;
 }
 .entries{
@@ -142,6 +142,11 @@ section.container.Right-box{
     font-weight: 900;
     letter-spacing: 3px;
     animation: fadeInOut 3s ease-in-out infinite alternate;
+}
+.entries h6{
+    animation: fadeInOut 3s ease-in-out infinite alternate;
+    
+    
 }
 /* animation for result output */
 @keyframes fadeInOut {

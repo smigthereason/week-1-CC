@@ -56,7 +56,7 @@ body {
     border: 0;
     font-size: x-large;
     font-weight: 800;
-    animation: dropDownAnimation 2s ease forwards;
+    animation: dropDownAnimation 6s ease forwards;
     transition: top 0.1s ease;
     
 }
